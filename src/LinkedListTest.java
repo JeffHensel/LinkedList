@@ -55,12 +55,12 @@ public class LinkedListTest {
         System.out.println("~Test100k passed");
     }
     
-    @Test
+   /* @Test
     public void test1m() {
         int elements = 1000000;
         addGet(elements);
         System.out.println("~Test1m passed");
-    }
+    }*/
     
     @Test
     public void testSet() {

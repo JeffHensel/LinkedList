@@ -116,22 +116,17 @@ public class LinkedList<T> {
   
     @Override
     public String toString() {
-        if (head == null) {
-            return "{}";
-        }
-        else {
-            StringBuilder sb = new StringBuilder();
-            sb.append("{");
-            LinkedNode<T> curNode = head;
-            while (curNode != null) {
-                sb.append(curNode.getValue().toString());
-                if (curNode.getNext() != null) {
-                    sb.append(", ");
-                }
-                curNode = curNode.getNext();
+        StringBuilder sb = new StringBuilder();
+        sb.append("{");
+        LinkedNode<T> curNode = head;
+        while (curNode != null) {
+            sb.append(curNode.getValue().toString());
+            if (curNode.getNext() != null) {
+                sb.append(", ");
             }
-            return sb.append("}").toString();
+            curNode = curNode.getNext();
         }
+        return sb.append("}").toString();
     }
     
     /**
